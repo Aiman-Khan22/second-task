@@ -1,24 +1,31 @@
 package com.example.secondtask;
 
 public class Model2 {
-    int b;
-
-    public Model2(int b) {
+    public Model2(String b, String imagee) {
         this.b = b;
+        this.imagee = imagee;
     }
 
-    public int getB() {
+    String b;
+
+
+    public String getB() {
         return b;
     }
 
-    public void setB(int b) {
+    public void setB(String b) {
         this.b = b;
     }
 
-    @Override
-    public String toString() {
-        return "Model2{" +
-                "b=" + b +
-                '}';
+    public String getImagee() {
+        return imagee;
     }
+
+    public void setImagee(String imagee) {
+        this.imagee = imagee;
+    }
+
+   String imagee;
+
+
 }

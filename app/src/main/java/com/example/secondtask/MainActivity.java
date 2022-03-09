@@ -79,9 +79,10 @@ AdapterClass adapter;
     private List<Model2> ChildItemList() {
         List<Model2> ChildItemList = new ArrayList<>();
 
-        ChildItemList.add(new Model2(1));
-        ChildItemList.add(new Model2(2));
-        ChildItemList.add(new Model2(3));
+        ChildItemList.add(new Model2("1","https://www.freeimages.com/photo/koldalen-4-1384902"));
+        ChildItemList.add(new Model2("2","https://www.freeimages.com/photo/koldalen-4-1384902"));
+        ChildItemList.add(new Model2("3","https://www.freeimages.com/photo/koldalen-4-1384902"));
+        ChildItemList.add(new Model2("4","https://www.freeimages.com/photo/koldalen-4-1384902"));
 
         return ChildItemList;
     }

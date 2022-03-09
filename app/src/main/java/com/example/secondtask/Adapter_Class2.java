@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,7 +41,8 @@ public class Adapter_Class2 extends RecyclerView.Adapter<Adapter_Class2.holder2>
       Model2  current = obj2.get(position);
 
         holder.textView.setText(String.valueOf(current.getB()));
-
+Glide.with(context).load(current.getImagee()).into(holder.image);
+        Log.d("hello", "" +String.valueOf(current.getImagee()));
     }
 
     @Override
@@ -48,13 +51,12 @@ public class Adapter_Class2 extends RecyclerView.Adapter<Adapter_Class2.holder2>
     }
 
     public class holder2 extends RecyclerView.ViewHolder {
-        TextView textView;
-
+       TextView textView;ImageView image;
 
         public holder2(@NonNull View itemView) {
             super(itemView);
             textView = itemView.findViewById(R.id.textView);
-
+            image = itemView.findViewById(R.id.image);
 
         }
     }
